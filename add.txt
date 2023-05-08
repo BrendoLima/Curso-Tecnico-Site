@@ -1,0 +1,122 @@
+
+
+1. <!DOCTYPE> - defines the document type
+2. <html> - defines the root element of an HTML document
+3. <head> - contains metadata information about the document
+4. <title> - specifies a title for the document
+5. <body> - defines the body of the document
+6. <header> - defines a header for a document or section
+7. <nav> - defines a set of navigation links
+8. <main> - specifies the main content of a document
+9. <section> - defines a section in a document
+10. <article> - defines an article in a document
+11. <aside> - defines content aside from the content (like a sidebar)
+12. <footer> - defines a footer for a document or section
+13. <h1> to <h6> - defines heading levels
+14. <p> - defines a paragraph
+15. <a> - defines a hyperlink
+16. <img> - defines an image
+17. <ul> - defines an unordered list
+18. <ol> - defines an ordered list
+19. <li> - defines a list item
+20. <table> - defines a table
+21. <tr> - defines a table row
+22. <th> - defines a table header cell
+23. <td> - defines a table data cell
+24. <form> - defines a form for user input
+25. <input> - defines an input field
+26. <button> - defines a clickable button
+27. <label> - defines a label for an input element
+28. <select> - defines a dropdown list
+29. <option> - defines an option in a dropdown list
+30. <textarea> - defines a multiline input field
+31. <fieldset> - groups related form elements
+32. <legend> - defines a caption for a <fieldset>
+33. <div> - defines a section of the document for styling and layout purposes
+34. <span> - defines a small section of the document for styling and layout purposes
+35. <br> - inserts a line break
+36. <hr> - defines a thematic break
+37. <style> - defines styles for HTML elements
+38. <script> - defines a client-side script
+39. <meta> - defines metadata about the document
+
+This is not an exhaustive list, but it covers the most commonly used HTML tags.
+
+
+
+/////
+Em HTML (Hypertext Markup Language), uma tag é um trecho de código que representa um tipo específico de elemento ou conteúdo em uma página da web. As tags HTML são usadas para definir a estrutura, o conteúdo e a aparência das páginas da web.
+
+As tags HTML são escritas como tags de abertura entre colchetes angulares (<>) e tags de fechamento com uma barra (/) antes do nome da tag entre colchetes angulares. Por exemplo, a tag <p> é usada para definir um parágrafo e é escrita como <p> ... </p> . O conteúdo que fica entre as tags de abertura e fechamento é o texto, as imagens ou outro conteúdo que você deseja definir usando essa tag específica.
+
+As tags HTML são importantes porque ajudam os navegadores da Web a interpretar o conteúdo e a estrutura de uma página da Web, o que, por sua vez, afeta como a página é exibida aos usuários. Diferentes tags são usadas para diferentes tipos de conteúdo, como texto, imagens, links, cabeçalhos, tabelas, formulários e muito mais. Usando tags HTML, os desenvolvedores da web podem criar páginas da web bem estruturadas e semânticas que são acessíveis e fáceis de manter.
+
+
+
+
+
+
+
+
+
+
+
+// 2=0,1
+//10=0,1,2,3,4,5,6,7,8,9
+//16=0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Há muitas tags HTML disponíveis para uso. Aqui está uma lista de algumas das tags mais usadas em HTML5:
+
+<!DOCTYPE> - define o tipo de documento
+<html> - define o elemento raiz de um documento HTML
+<head> - contém informações de metadados sobre o documento
+<title> - especifica um título para o documento
+<body> - define o corpo do documento
+<header> - define um cabeçalho para um documento ou seção
+<nav> - define um conjunto de links de navegação
+<main> - especifica o conteúdo principal de um documento
+<section> - define uma seção em um documento
+<article> - define um artigo em um documento
+<aside> - define o conteúdo além do conteúdo (como uma barra lateral)
+<footer> - define um rodapé para um documento ou seção
+<a> - define um hiperlink
+<ul> - define uma lista não ordenada
+<ol> - define uma lista ordenada
+<li> - define um item de lista
+<table> - define uma tabela
+<tr> - define uma linha da tabela
+<th> - define uma célula de cabeçalho da tabela
+<td> - define uma célula de dados da tabela
+<form> - define um formulário para entrada do usuário
+<input> - define um campo de entrada
+<button> - define um botão clicável
+<label> - define um rótulo para um elemento de entrada
+<selecionar> - define uma lista suspensa
+<opção> - define uma opção em uma lista suspensa
+<textarea> - define um campo de entrada multilinha
+<fieldset> - agrupa elementos de formulário relacionados
+<legend> - define uma legenda para um <fieldset>
+<span> - define uma pequena seção do documento para fins de estilo e layout
+
+<hr> - define uma pausa temática
+<estilo> - define estilos para elementos HTML
+<script> - define um script do lado do cliente
+<meta> - define metadados sobre o documento
+Esta não é uma lista exaustiva, mas abrange as tags HTML mais usadas.
