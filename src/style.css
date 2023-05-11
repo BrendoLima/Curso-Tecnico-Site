@@ -1,0 +1,11 @@
+* {
+    background-color: black;
+    color: white;
+}
+time,navbar{
+    display: flex;
+    justify-content:center;
+}
+navbar {
+    gap: 25px;
+}
