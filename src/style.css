@@ -6,6 +6,13 @@
     color: rgb(255, 255, 255);
 }
 
+a:hover{
+    text-decoration:underline white;
+    transition-duration: 2s;
+}
+
+
+
 /*Centralizador*/
 body,
 h1,
