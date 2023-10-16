@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js'></script>
+  <script>
+    // Função que atualiza a página
+    function atualizarPagina() {
+      location.reload();
+    }
+    // Define o intervalo de atualização para 1 minuto (60.000 milissegundos)
+    const intervalo = 60000;
+
+    // Configura o intervalo de atualização
+    setInterval(atualizarPagina, intervalo);
+
+  </script>
 </head>
+
 <body>
   <h1>Novo Quadro</h1>
 </body>
-</html>>
+
+</html>
