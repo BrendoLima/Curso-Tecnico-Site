@@ -1,0 +1,51 @@
+/* Estilo para o enunciado da pergunta */
+.questao {
+    font-size: 18px; /* Tamanho da fonte do enunciado */
+    font-weight: normal; /* Peso da fonte - pode ser ajustado conforme necessário */
+    color: black; /* Cor do texto - preto */
+    margin: 10px 0; /* Margem superior e inferior para espaçamento */
+  }
+  
+  /* Estilo para as opções de marcação */
+  .opcao {
+    font-size: 16px; /* Tamanho da fonte das opções de marcação */
+    font-weight: normal; /* Peso da fonte - pode ser ajustado conforme necessário */
+    color: black; /* Cor do texto - preto */
+    margin: 5px 0; /* Margem superior e inferior para espaçamento entre as opções */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  }
+  
+  /* Estilo para as opções de marcação quando forem selecionadas (exemplo de estilo para resposta correta) */
+  .opcao.correta {
+    font-weight: bold; /* Peso da fonte - negrito para opções corretas */
+    color: green; /* Cor do texto - verde para opções corretas */
+    background-color: transparent; /* Cor de fundo padrão transparente */
+  }
+  
+  /* Estilo para as opções de marcação quando forem selecionadas (exemplo de estilo para resposta incorreta) */
+  .opcao.incorreta {
+    font-weight: bold; /* Peso da fonte - negrito para opções incorretas */
+    color: red; /* Cor do texto - vermelho para opções incorretas */
+    background-color: transparent; /* Cor de fundo padrão transparente */
+  }
+  
+  /* Estilo de hover para as opções corretas */
+  .opcao.correta:hover {
+    background-color: lightgreen; /* Cor de fundo verde ao passar o mouse sobre opções corretas */
+  }
+  
+  /* Estilo de hover para as opções incorretas */
+  .opcao.incorreta:hover {
+    background-color: lightcoral; /* Cor de fundo vermelha ao passar o mouse sobre opções incorretas */
+  }
+  
+  /* Estilo de active para as opções corretas */
+  .opcao.correta:active {
+    background-color: darkgreen; /* Cor de fundo verde mais escura ao pressionar opções corretas */
+  }
+  
+  /* Estilo de active para as opções incorretas */
+  .opcao.incorreta:active {
+    background-color: darkred; /* Cor de fundo vermelha mais escura ao pressionar opções incorretas */
+  }
+  

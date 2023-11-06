@@ -1,91 +1,78 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta nam e="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style_reset.css" />
+    <link rel="stylesheet" href="./styles/style-confirmed.css" />
+    <link rel="stylesheet" href="./styles/questions.css" />
+    
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title></title>
-  <meta name="description" content="" />
-  <meta nam e="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="." />
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
 
 </head>
 
 <body>
-  <div class="titulo_site">
-    <h1>Curso Tecnico</h1>
-  </div>
-  <br />
-  <div class="artigo">
-    <h2 class="sub_titulo">Anatomia de um comando CSS</h2>
-    <h4>
-      O CSS estipula regras para o arquivo em html. Com cada regra é possível
-      estilizar o conteúdo todo ou somente determinados elementos. Por isso
-      entenda, um comando básico é composto por seletor e declarações, que
-      contém propriedade e valor.
-    </h4>
-
-    <h4>Exercícos para serem copiados e respondidos no caderno:</h4>
-
-    <h4>1. O que é a sintaxe básica de um comando CSS?</h4>
-    <li>a) Seletor {Propriedade}</li>
-    <li>b) Seletor - Propriedade: Valor</li>
-    <li>c) Propriedade: Seletor</li>
-    <li>d) Valor {Propriedade - Seletor}</li>
-
+  <div class="more_content" >
     <br />
-    <h4>
-      2. Qual é a principal desvantagem do estilo interno de CSS? externo.css
-    </h4>
-    <li>a) Aumenta o tempo de carregamento da página</li>
-    <li>b) Não permite compartilhar estilos entre várias páginas</li>
-    <li></li>
-    <li></li>
-    <h4>
-      3. Quando o estilo Inline do CSS é mais útil?
-    </h4>
-  </div>
-  <style>
-    * {
-      margin: 0;
-    }
+    <div class="button_container">
+      <button class="button" onClick="toggle_button(this)"  >16-10-23</button>
+      <button class="button" onClick="toggle_button(this)"  >18-10-23</button>
+      
+    </div>
+    <h2 style="color: black;">Logo adicionarei o restante</h2>
+    
+    <iframe seamless class="content" src="" scrolling="no"></iframe>
+    <!--                                                               -->
+    <script>
+      function toggle_button(botao) {
+        let valorBotao = botao.textContent;
+        console.log(valorBotao);
+        const buttonContainer = botao.closest(".button_container");
+        if (buttonContainer) {
+          const botoesNaContainer = buttonContainer.querySelectorAll(".button");
+          botoesNaContainer.forEach((element) => {
+            if (element !== botao) {
+              element.classList.remove("selected");
+            }
+          });
 
-    body {
-      font-family: "Nunito", sans-serif;
-    }
+          if (!botao.classList.contains("selected")) {
+            botao.classList.add("selected");
+          }
+        }
+        change_src_iframe(valorBotao);
+        auto_size_iframe();
+      }
 
-    .titulo_site {
-      margin-top: 10px;
-      padding: 10px;
-      color: white;
-      background-color: #0075ff;
-      text-align: center;
-    }
+      /**/
+      function change_src_iframe(valor) {
+        let iframes = document.getElementsByClassName("content");
 
-    .artigo,
-    .sub_titulo {
-      padding: 0px 25px;
-      text-align: justify;
-    }
-
-    .artigo {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .artigo+h1,
-    h2,
-    h3,
-    h4 {
-      margin-bottom: 25px;
-    }
-
-    li {
-      list-style: none;
-    }
-  </style>
-</body>
-
+        iframes.length > 0
+          ? (iframes[0].src = "./contents/" + valor + ".html")
+          : "";
+      }
+      /**/
+      function auto_size_iframe() {
+        const iframe = document.querySelector(".content"); // Seleciona o primeiro iframe com a classe "content"
+        
+        if (iframe) {
+          iframe.onload = function () {
+            iframe.style.height =
+            iframe.contentDocument.body.scrollHeight + 50 + "px";
+          };
+        }
+      }
+      /**/
+      document.addEventListener("DOMContentLoaded", auto_size_iframe);
+      </script>
+</div>
+  </body>
 </html>
