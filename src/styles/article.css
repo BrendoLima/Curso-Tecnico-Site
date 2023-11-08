@@ -1,32 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
-titulo, subtitulo, conteudo {
+
+titulo,
+subtitulo,
+conteudo {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
 }
+
+
 
 article {
   display: flex;
   flex-direction: column;
 }
 
-titulo {font-size: 32px;}
-subtitulo,button{font-size: 20px;font-weight: bold;}
-conteudo {font-size: 16px;text-align: justify;}
+titulo {
+  font-size: 32px;
+}
+
+subtitulo,
+button {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+conteudo {
+  font-size: 16px;
+  text-align: justify;
+}
 
 
 
 h1::after,
 h2::after,
 h3::after,
-titulo::after, 
-subtitulo::after, 
+titulo::after,
+subtitulo::after,
 conteudo::after {
   content: "";
   display: block;
 }
 
 
-conteudo ~ subtitulo {
+conteudo~subtitulo {
   margin-top: 25px;
 }
-
