@@ -1,61 +1,32 @@
-/* Fonte principal - Nunito */
-body {
-  text-align: justify;
-  font-family: 'Nunito', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
+titulo, subtitulo, conteudo {
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  color: #333; /* Cor do texto padrão - escuro */
 }
 
-/* Estilo para títulos */
-titulo {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 25px; /* Espaçamento maior após títulos */
+article {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Estilo para subtítulos */
-subtitulo {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
+titulo {font-size: 32px;}
+subtitulo,button{font-size: 20px;font-weight: bold;}
+conteudo {font-size: 16px;text-align: justify;}
 
-/* Estilo para o conteúdo principal */
-conteudo {
-  font-size: 16px;
-  text-align: justify;
-}
 
-/* Links e estilização de texto realçado */
-a {
-  color: #0077cc; /* Cor padrão para links */
-  text-decoration: underline; /* Sublinhado em links */
-}
 
-/* Estilo para texto em negrito (strong) */
-strong {
-  font-weight: bold;
-}
-
-/* Estilo para texto em itálico (em) */
-em {
-  font-style: italic;
-}
-conteudo ~ conteudo {margin-bottom: 5px;}
-/* Quebra de linha antes e depois de elementos específicos */
-conteudo ~ titulo::before,
-conteudo ~ subtitulo::before,
-titulo ~ subtitulo::before,
-subtitulo ~ titulo::before {
+h1::after,
+h2::after,
+h3::after,
+titulo::after, 
+subtitulo::after, 
+conteudo::after {
   content: "";
-  display: block; /* Isso cria uma quebra de linha */
-  margin-top: 30px; /* Ou a margem que você preferir */
+  display: block;
 }
 
-conteudo ~ titulo::after,
-conteudo ~ subtitulo::after,
-titulo ~ subtitulo::after,
-subtitulo ~ titulo::after {
-  content: "";
-  display: block; /* Isso cria uma quebra de linha */
-  margin-bottom: 5px; /* Ou a margem que você preferir */
+
+conteudo ~ subtitulo {
+  margin-top: 25px;
 }
+

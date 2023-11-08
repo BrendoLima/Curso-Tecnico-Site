@@ -1,0 +1,28 @@
+.button_container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+}
+
+button:disabled {
+  background-color: #ccc; 
+  color: #666; 
+  cursor: not-allowed; }
+  
+
+.button {
+  font-family: "Nunito", sans-serif;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+.button.selected {
+  border: solid #0075ff;
+  box-sizing: border-box;
+}

@@ -6,73 +6,22 @@
     <title></title>
     <meta name="description" content="" />
     <meta nam e="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style_reset.css" />
-    <link rel="stylesheet" href="./styles/style-confirmed.css" />
-    <link rel="stylesheet" href="./styles/questions.css" />
-    
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/body.css" />
+    <link rel="stylesheet" href="styles/article.css" />
+    <script src="scripts/funcoes.js"></script>
+  </head>
 
-
-</head>
-
-<body>
-  <div class="more_content" >
-    <br />
+  <body>
+    <!--  -->
+    <titulo>Datas de Conteúdos</titulo>
+    <!--  -->
     <div class="button_container">
-      <button class="button" onClick="toggle_button(this)"  >16-10-23</button>
-      <button class="button" onClick="toggle_button(this)"  >18-10-23</button>
-      
+      <button class="button" onClick="toggle_button(this)">16-10-23</button>
+      <button class="button" onClick="toggle_button(this)">18-10-23</button>
     </div>
-    <h2 style="color: black;">Logo adicionarei o restante</h2>
-    
+    <!--  -->
     <iframe seamless class="content" src="" scrolling="no"></iframe>
-    <!--                                                               -->
-    <script>
-      function toggle_button(botao) {
-        let valorBotao = botao.textContent;
-        console.log(valorBotao);
-        const buttonContainer = botao.closest(".button_container");
-        if (buttonContainer) {
-          const botoesNaContainer = buttonContainer.querySelectorAll(".button");
-          botoesNaContainer.forEach((element) => {
-            if (element !== botao) {
-              element.classList.remove("selected");
-            }
-          });
-
-          if (!botao.classList.contains("selected")) {
-            botao.classList.add("selected");
-          }
-        }
-        change_src_iframe(valorBotao);
-        auto_size_iframe();
-      }
-
-      /**/
-      function change_src_iframe(valor) {
-        let iframes = document.getElementsByClassName("content");
-
-        iframes.length > 0
-          ? (iframes[0].src = "./contents/" + valor + ".html")
-          : "";
-      }
-      /**/
-      function auto_size_iframe() {
-        const iframe = document.querySelector(".content"); // Seleciona o primeiro iframe com a classe "content"
-        
-        if (iframe) {
-          iframe.onload = function () {
-            iframe.style.height =
-            iframe.contentDocument.body.scrollHeight + 50 + "px";
-          };
-        }
-      }
-      /**/
-      document.addEventListener("DOMContentLoaded", auto_size_iframe);
-      </script>
-</div>
+    <!--  -->
   </body>
 </html>
