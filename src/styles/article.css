@@ -8,6 +8,14 @@ conteudo {
 }
 
 
+cabecalho,
+cabecalho * {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
 
 article {
   display: flex;
