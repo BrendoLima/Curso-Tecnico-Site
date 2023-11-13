@@ -1,28 +1,46 @@
+.content {
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+}
+
+iframe {
+    border: none;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        width: 90vw;
+    }
+}
+
 .button_container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  border: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    border: none;
+    width: 70%;
+    gap: 10px;
 }
 
 button:disabled {
-  background-color: #ccc; 
-  color: #666; 
-  cursor: not-allowed; }
-  
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #666;
+}
 
 .button {
-  font-family: "Nunito", sans-serif;
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  box-sizing: border-box;
-  border: 2px solid transparent;
+    font-family: "Nunito", sans-serif;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
 }
 
 .button.selected {
-  border: solid #0075ff;
-  box-sizing: border-box;
+    border: solid #0075ff;
+    box-sizing: border-box;
 }

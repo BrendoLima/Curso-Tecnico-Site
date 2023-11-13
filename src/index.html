@@ -7,21 +7,31 @@
   <title></title>
   <meta name="description" content="" />
   <meta nam e="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles/buttons.css" />
-  <link rel="stylesheet" href="styles/body.css" />
-  <link rel="stylesheet" href="styles/article.css" />
+  <link rel="stylesheet" href="./styles/all.css" />
+  <link rel="stylesheet" href="./styles/buttons.css" />
   <script src="scripts/funcoes.js"></script>
 </head>
 
-<body>
+<body style="align-items: center;">
+  <script></script>
   <!--  -->
   <titulo>Datas de Conteúdos</titulo>
   <!--  -->
   <div class="button_container">
+    <div>
+      <button class="button" onClick="toggle_button(this)">seguranca_de_sistemas</button>
+      <button class="button" disabled onClick="toggle_button(this)">desenvolvimento_web</button>
+    </div>
     <button class="button" onClick="toggle_button(this)">09-10-23</button>
     <button class="button" onClick="toggle_button(this)">16-10-23</button>
     <button class="button" onClick="toggle_button(this)">18-10-23</button>
-    <button class="button" onClick="toggle_button(this)">trabalho_seguranca_de_sistemas</button>
+    <button class="button" onClick="toggle_button(this)" disabled>23-10-23</button>
+    <button class="button" onClick="toggle_button(this)" disabled>25-10-23</button>
+    <button class="button" onClick="toggle_button(this)" disabled>30-10-23</button>
+    <button class="button" onClick="toggle_button(this)" disabled>01-11-23</button>
+    <button class="button" onClick="toggle_button(this)" disabled>06-11-23</button>
+    <button class="button" onClick="toggle_button(this)" disabled>08-11-23</button>
+    <button class="button" onClick="toggle_button(this)" disabled>13-11-23</button>
   </div>
   <!--  -->
   <iframe seamless class="content" src="" scrolling="no"></iframe>

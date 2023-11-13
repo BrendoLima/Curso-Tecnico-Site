@@ -6,87 +6,85 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../styles/article.css" />
+  <link rel="stylesheet" href="../styles/all.css" />
 </head>
 
 <body>
-  <article>
-    <cabecalho>
-      <conteudo>Aula do Dia: 16/10/2023</conteudo>
-      <conteudo>Desenvolvimento web</conteudo>
-      <conteudo>Título da Aula: Semântica CSS</conteudo>
-    </cabecalho>
 
-    <subtitulo>O que é CSS?</subtitulo>
-    <conteudo>
-      CSS é a sigla para Cascading Style Sheets, que, em português, significa Folha de Estilo em Cascata. O CSS é
-      facilmente compreendido e aprendido, e pode ser facilmente combinado com as linguagens de marcação HTML ou XHTML.
-      Ele desempenha o papel de separar o conteúdo do site de sua representação visual. Considere-o como a decoração da
-      sua página. Com o CSS, você pode ajustar a cor do texto, do fundo, a fonte e o espaçamento entre parágrafos. Além
-      disso, é possível criar tabelas, experimentar diferentes layouts, adaptar imagens para tamanhos de tela
-      específicos e muito mais.
-      O CSS foi desenvolvido pelo W3C (World Wide Web Consortium) em 1996 para solucionar um problema simples. O HTML
-      originalmente não tinha tags para formatação de página; você apenas inseria a marcação. Tags como <font>,
-        introduzidas na versão 3.2 do HTML, causaram muitos problemas aos desenvolvedores, pois resultavam em sites com
-        diferentes fontes, cores e estilos. Isso tornava a tarefa de reescrever o código demorada, dolorosa e cara. Como
-        solução, o W3C criou o CSS.
-        A relação entre HTML e CSS é muito estreita. Enquanto o HTML é uma linguagem de marcação que fornece a estrutura
-        fundamental de um site, o CSS é responsável pela estética e estilo. Eles são complementares. Embora o CSS não
-        seja estritamente necessário, é improvável que você queira visitar um site que use apenas HTML, pois ele
-        pareceria desprovido de estilo e personalização.
-    </conteudo>
+  <cabecalho>
+    <conteudo>Aula do Dia: 16/10/2023</conteudo>
+    <conteudo>Desenvolvimento web</conteudo>
+    <conteudo>Título da Aula: Semântica CSS</conteudo>
+  </cabecalho>
 
-    <subtitulo>Vantagens do CSS</subtitulo>
+  <subtitulo>O que é CSS?</subtitulo>
+  <conteudo>
+    CSS é a sigla para Cascading Style Sheets, que, em português, significa Folha de Estilo em Cascata. O CSS é
+    facilmente compreendido e aprendido, e pode ser facilmente combinado com as linguagens de marcação HTML ou XHTML.
+    Ele desempenha o papel de separar o conteúdo do site de sua representação visual. Considere-o como a decoração da
+    sua página. Com o CSS, você pode ajustar a cor do texto, do fundo, a fonte e o espaçamento entre parágrafos. Além
+    disso, é possível criar tabelas, experimentar diferentes layouts, adaptar imagens para tamanhos de tela
+    específicos e muito mais.
+    O CSS foi desenvolvido pelo W3C (World Wide Web Consortium) em 1996 para solucionar um problema simples. O HTML
+    originalmente não tinha tags para formatação de página; você apenas inseria a marcação. Tags como "<"font">",
+      introduzidas na versão 3.2 do HTML, causaram muitos problemas aos desenvolvedores, pois resultavam em sites com
+      diferentes fontes, cores e estilos. Isso tornava a tarefa de reescrever o código demorada, dolorosa e cara. Como
+      solução, o W3C criou o CSS.
+      A relação entre HTML e CSS é muito estreita. Enquanto o HTML é uma linguagem de marcação que fornece a estrutura
+      fundamental de um site, o CSS é responsável pela estética e estilo. Eles são complementares. Embora o CSS não
+      seja estritamente necessário, é improvável que você queira visitar um site que use apenas HTML, pois ele
+      pareceria desprovido de estilo e personalização.
+  </conteudo>
+  <subtitulo>Vantagens do CSS</subtitulo>
+  <conteudo>
+    A diferença entre um site que implementa CSS e outro que não o usa é
+    gigantesca e notável. Você já deve ter visto um site que não carrega
+    completamente ou tem um plano de fundo branco com texto azul e preto.
+    Isso significa que a parte CSS do site não foi carregada corretamente
+    ou não existe. E é assim que um site somente com HTML se parece.
+    Acredito que você vai concordar comigo de que isso não é muito bonito,
+    certo? Antes de usar CSS, toda a estilização tinha que ser incluída na
+    marcação HTML. Isso significa que você deveria descrever separadamente
+    todo o plano de fundo, as cores das fontes, os alinhamentos, etc. Mas
+    o CSS permite que você estilize tudo em um arquivo diferente, criando
+    assim o estilo separadamente. E, mais tarde, faça integração do
+    arquivo CSS na parte superior da marcação HTML. Isso mantém a marcação
+    HTML limpa e fácil de manter. Resumindo, com o CSS você não precisa
+    mais escrever repetidamente como os elementos individuais se parecem.
+    Isso economiza tempo, encurta o código e diminui a chance de erros. O
+    CSS permite que você tenha vários estilos em uma página HTML, tornando
+    as possibilidades de personalização quase infinitas. Hoje em dia, isso
+    está se tornando mais uma necessidade do que um simples recurso.
+  </conteudo>
 
-    <conteudo>
-      A diferença entre um site que implementa CSS e outro que não o usa é
-      gigantesca e notável. Você já deve ter visto um site que não carrega
-      completamente ou tem um plano de fundo branco com texto azul e preto.
-      Isso significa que a parte CSS do site não foi carregada corretamente
-      ou não existe. E é assim que um site somente com HTML se parece.
-      Acredito que você vai concordar comigo de que isso não é muito bonito,
-      certo? Antes de usar CSS, toda a estilização tinha que ser incluída na
-      marcação HTML. Isso significa que você deveria descrever separadamente
-      todo o plano de fundo, as cores das fontes, os alinhamentos, etc. Mas
-      o CSS permite que você estilize tudo em um arquivo diferente, criando
-      assim o estilo separadamente. E, mais tarde, faça integração do
-      arquivo CSS na parte superior da marcação HTML. Isso mantém a marcação
-      HTML limpa e fácil de manter. Resumindo, com o CSS você não precisa
-      mais escrever repetidamente como os elementos individuais se parecem.
-      Isso economiza tempo, encurta o código e diminui a chance de erros. O
-      CSS permite que você tenha vários estilos em uma página HTML, tornando
-      as possibilidades de personalização quase infinitas. Hoje em dia, isso
-      está se tornando mais uma necessidade do que um simples recurso.
-    </conteudo>
+  <subtitulo>Como CSS Funciona</subtitulo>
 
-    <subtitulo>Como CSS Funciona</subtitulo>
+  <conteudo>
+    O CSS é uma ferramenta muito potente que possibilita criar diversas
+    funcionalidades ao invés de usar JavaScript ou outra linguagem mais
+    pesada. Se usado com moderação, CSS pode viabilizar uma ótima
+    experiência ao desenvolvedor e usuários das páginas web. O CSS usa uma
+    sintaxe simples baseada em inglês com um conjunto de regras que o
+    governam. Como mencionamos anteriormente, o HTML nunca teve a intenção
+    de usar elementos de estilo, apenas a marcação da página. Foi criado
+    para descrever apenas o conteúdo. Por exemplo: "&lt;p&gt;Este é um
+    parágrafo.&lt;/p&gt;". Mas como você estiliza o parágrafo? A estrutura
+    da sintaxe CSS é bem simples. Tem um seletor e um bloco de declaração.
+    Você seleciona um elemento e depois declara o que deseja fazer com
+    ele. Bastante simples, certo? Mas tem algumas regras que você precisa
+    saber. Isso também é simples, não se preocupe. O seletor aponta para o
+    elemento HTML que você deseja estilizar. O bloco de declaração contém
+    uma ou mais declarações separadas por ponto e vírgula. Cada declaração
+    inclui um nome de propriedade CSS e um valor, separados por dois
+    pontos. Uma declaração CSS sempre termina com um ponto-e-vírgula e os
+    blocos de declaração são cercados por chaves.
+  </conteudo>
 
-    <conteudo>
-      O CSS é uma ferramenta muito potente que possibilita criar diversas
-      funcionalidades ao invés de usar JavaScript ou outra linguagem mais
-      pesada. Se usado com moderação, CSS pode viabilizar uma ótima
-      experiência ao desenvolvedor e usuários das páginas web. O CSS usa uma
-      sintaxe simples baseada em inglês com um conjunto de regras que o
-      governam. Como mencionamos anteriormente, o HTML nunca teve a intenção
-      de usar elementos de estilo, apenas a marcação da página. Foi criado
-      para descrever apenas o conteúdo. Por exemplo: "&lt;p&gt;Este é um
-      parágrafo.&lt;/p&gt;". Mas como você estiliza o parágrafo? A estrutura
-      da sintaxe CSS é bem simples. Tem um seletor e um bloco de declaração.
-      Você seleciona um elemento e depois declara o que deseja fazer com
-      ele. Bastante simples, certo? Mas tem algumas regras que você precisa
-      saber. Isso também é simples, não se preocupe. O seletor aponta para o
-      elemento HTML que você deseja estilizar. O bloco de declaração contém
-      uma ou mais declarações separadas por ponto e vírgula. Cada declaração
-      inclui um nome de propriedade CSS e um valor, separados por dois
-      pontos. Uma declaração CSS sempre termina com um ponto-e-vírgula e os
-      blocos de declaração são cercados por chaves.
-    </conteudo>
+  <subtitulo>Vamos ver um exemplo:</subtitulo>
+  <conteudo>Todos os elementos &lt;p&gt; serão estilizados e serão coloridos de
+    azul e negrito.</conteudo>
+  <img src="../assets/Captura de tela 2023-10-16 193501.png" />
 
-    <conteudo><b>Vamos ver um exemplo:</b></conteudo>
-    <conteudo>Todos os elementos "&lt;p&gt;" serão estilizados e serão coloridos de
-      azul e negrito.</conteudo>
-    <img src="../assets/Captura de tela 2023-10-16 193501.png" />
-  </article>
   <subtitulo>Final do conteúdo da aula do dia 16/10/2023</subtitulo>
 </body>
 

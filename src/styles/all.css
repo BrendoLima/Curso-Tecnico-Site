@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700&display=swap");
+
+* {
+    font-family: "Inter", sans-serif;
+    color: black;
+}
+
+/*Cor gera de texto*/
+
+body {
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+titulo,
+subtitulo,
+conteudo {
+    line-height: 1.6;
+}
+
+cabecalho {
+    font-weight: bold;
+    flex-wrap: wrap;
+    font-size: 28px;
+    display: flex;
+    gap: 25px;
+}
+
+titulo {
+    font-size: 32px;
+}
+
+subtitulo,
+button {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+conteudo {
+    text-align: justify;
+    font-size: 16px;
+}
+
+titulo::after,
+subtitulo::after,
+conteudo::after {
+    display: block;
+    content: "";
+}
+cabecalho+subtitulo,
+conteudo+subtitulo,
+cabecalho+conteudo,
+conteudo+cabecalho {
+    margin-top: 25px;
+}
