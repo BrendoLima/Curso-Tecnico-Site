@@ -31,12 +31,20 @@ cabecalho {
     gap: 25px;
 }
 
+.prevensao {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
 titulo {
     font-size: 32px;
 }
 
 subtitulo,
-button {
+button,
+.prevensao conteudo:first-child {
     font-weight: bold;
     font-size: 20px;
 }
@@ -52,6 +60,7 @@ conteudo::after {
     display: block;
     content: "";
 }
+
 cabecalho+subtitulo,
 conteudo+subtitulo,
 cabecalho+conteudo,
